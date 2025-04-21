@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/programdesign.css">
+	<link rel="icon"  href="image/favicon(3).ico" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/5304a737da.js" crossorigin="anonymous"></script>
+	<title>Basket Page</title>
+</head>
+<body>
+	<header>
+		<div class="navbarcontainer">
+			<img class="logo" src="image/SDC_logo.png" alt="logo">
+			<div class="navbar">
+				<div class="navbox">
+					<a href="homepage.html">Home</a>
+				<div class="dropdown">
+					<button class="btndropdown">Products</button>
+				<div class="dropdown_content">
+					<a href="risingdesk.html">
+						<img src="image/nav-desk1.png" alt="good desk">Premium Desk</a>
+					<a href="risingdesk.html">
+						<img src="image/nav-desk2.png" alt="All Desk">
+						ALl Desk</a>
+					<a href="risingdesk.html">
+						<img src="image/nav-desk3.png" alt="Accessories">
+						Accessories</a>
+					<a href=""></a>
+				</div>
+				</div>
+				<a href="healthbenefit.html">Health Benefit</a>
+				<a href="contact_us.html">Contact Us</a>
+				<a href="login.html">Login </a><br>
+				</div>
+				
+				<div class="searchandcart">
+					<div class="searchbox">
+						<input type="text" placeholder="Search..." autofocus>
+						<i class="fa-solid fa-magnifying-glass fa-fade"></i>
+					</div>
+					<a href="basket.html">
+						<div class="cart_logo"><i class="fa-solid fa-cart-arrow-down"></i></div>
+
+					</a>
+					
+					<!-- <img class="cart_logo" src="image/icon/shopping-cart.png" alt="cart"> -->
+				</div>
+			</div>
+			<label for="navonoff" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+			<input type="checkbox" name="navonoff" id="navonoff" class="navonoffcheck">
+			<nav id="phonenav">
+				<ul>
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="risingdesk.html">Products</a></li>
+					<li><a href="healthbenefit.html">Health Benefits</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+	<section>
+		<div class="popup_container_address" id="popup_address">
+			<div class="info_container">
+				<h1>
+					Payment Info.
+				</h1><br><hr><br>
+				<p>Payment Method:</p>
+				<div class="card_method">
+					<p>
+						<i class="fa-brands fa-cc-visa"></i> Credit Card
+					</p>
+					<p>
+						<i class="fa-brands fa-paypal"></i> PayPal
+					</p>
+				</div><br>
+				<p>Name On Card:</p><br>
+				<input type="text" placeholder="name@..">
+				<hr><br>
+				<p>Card Number:</p><br>
+				<input type="text" placeholder="**** **** **** 1234">
+				<hr><br>
+				<a id="checkout_btn" href="#" onclick="alert('Check Out Successful')" >Check Out.</a>
+			</div>
+		</div>
+		<div class="basket_mainbody">
+            <div class="basket_container">
+                <div class="basket_container_label">
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantities</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="topcol">
+                                    <div class="topcolleft">
+                                        <img src="image/basket/desk_1.png" alt="secret lab desk">
+                                    </div>
+                                    <div class="topcolright">
+                                        <div class="topcolrightchild">Mangus Pro </div>
+                                        <div class="topcolrightchild">$999</div>
+                                        <div class="topcolrightchild"><button class="btn-remove">Remove</button></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" name="number1" id="number1" value="1"></td>
+                            <td class="price">$999</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="topcol">
+                                    <div class="topcolleft">
+                                        <img src="image/basket/desk_2.png" alt="premium desk ">
+                                    </div>
+                                    <div class="topcolright">
+                                        <div class="topcolrightchild">Produtivity Desk</div>
+                                        <div class="topcolrightchild">$1200</div>
+                                        <div class="topcolrightchild"><button class="btn-remove">Remove</button></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td ><input class="quantities" type="number" name="number2" id="number2" value="1"></td>
+                            <td class="price">$1200</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="topcol">
+                                    <div class="topcolleft">
+                                        <img src="image/basket/desk_3.png" alt="Cable Mangement">
+                                    </div>
+                                    <div class="topcolright">
+                                        <div class="topcolrightchild">Cable Managemnt </div>
+                                        <div class="topcolrightchild">$89</div>
+                                        <div class="topcolrightchild"><button class="btn-remove">Remove</button></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" name="number3" id="number3" value="1"></td>
+                            <td class="price">$89</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="basketboxbot">
+                    <div class="basketboxbotchild">
+                        <div class="basketbotchilda">Total</div>
+                        <div class="basketbotchilda">$2288</div>
+                    </div>
+                    <div class="basketboxbotchild">
+                        <div class="basketbotchilda">Discount</div>
+                        <div class="basketbotchilda">$100</div>
+                    </div>
+                    <div class="basketboxbotchild">
+                        <div class="basketbotchilda">Total</div>
+                        <div class="basketbotchilda">$2188</div>
+                    </div>
+                    <div class="basketboxbotchild1"><a href="#popup_address">Payment Info</a></div>
+                </div>
+            </div>
+		</div>
+	</section>
+	<footer>
+		<div class="row footer_container">
+			<div class="col-l-2 col-m-2 col-s-6  subscribe">
+				<img src="image/SDC_logo.png" alt=""><br>
+				<h1>Subscrbe Now</h1>
+				<i class="fa-solid fa-envelope"></i>
+				<input  type="text" id="username" name="username" placeholder=" Enter your Email...">
+				<hr>
+				<button>Subscribe</button>
+			</div>
+			<div class="col-l-2 col-m-2 col-s-6">
+				<h1>Information</h1>
+				<a href="contact_us.html">About Us</a><br>
+				<a href="risingdesk.html">Products</a><br>
+				<a href="">Accessories</a><br>
+				<a href="basket.html">Basket</a><br>
+				<a href="login.html">Login </a><br>
+			</div>
+			<div class="col-l-2 col-m-2 col-s-6">
+				<h1>Our Services</h1>
+				<a href="basket.html">Order</a><br>
+				<a href="contact_us.html">24 hour hotline</a><br>
+				<a href="contact_us.html">Fastest delivery</a><br>
+				<a href="risingdesk.html">Brands list</a><br>
+			</div>
+			<div class="col-l-2 col-m-2 col-s-6">
+				<h1>Helpful</h1>
+				<a href="contact_us.html">Service</a><br>
+				<a href="contact_us.html">Supports</a><br>
+				<a href="contact_us.html">Terms & Condition</a><br>
+				<a href="contact_us.html">Privacy Policy</a><br>
+			</div>
+			<div class="col-l-2 col-m-2 col-s-12 contact_us">
+				<h1>Contact Us</h1>
+				<i class="fa-solid fa-phone-volume"></i>
+				+ 95 111 111 111 <br>
+				<i class="fa-solid fa-envelope"></i>
+				<a href="https://mail.google.com/mail/u/0/#inbox?compose=new">stadesk@com.mm</a><br><br>
+				<div id="social_icon">
+					<a href="https://telegram.org/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+					<a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<hr> 
+			<div class="col-l-12 col-m-12 col-s-12 copyright">
+				2024 &#169; company.Ltd | All Right reserved
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
